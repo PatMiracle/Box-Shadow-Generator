@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Shadow Generator</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Box-Shadow Generator</h2>
+    </header>
+    <main>
+      <!-- box center -->
+      <section class="box-center">
+        <div class="box"></div>
+      </section>
+      <!-- Customize Shadow -->
+      <section class="customize">
+        <div class="title">
+          <h3>Customize Shadow</h3>
+        </div>
+        <div class="inputs-wrapper">
+          <!-- inset -->
+          <label for="inset">Inset <input type="checkbox" id="inset" /> </label>
+          <!-- h-offset -->
+          <label for="h-offest">Horizontal offset</label>
+          <input type="range" id="h-offset" max="100" min="-100" value="0" />
+          <!-- v-offset -->
+          <label for="v-offset">Vertical offset</label>
+          <input type="range" id="v-offset" max="100" min="-100" value="0" />
+          <!-- blur radius -->
+          <label for="blur-radius">Blur radius</label>
+          <input type="range" id="blur-radius" min="0" max="100" value="0" />
+          <!-- spread radius -->
+          <label for="spread-radius">Spread radius</label>
+          <input
+            type="range"
+            id="spread-radius"
+            max="100"
+            min="-100"
+            value="0"
+          />
+          <!-- opacity -->
+          <label for="opacity">Shadow color opacity</label>
+          <input
+            type="range"
+            id="opacity"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+          />
+          <!-- color -->
+          <label for="color">Shadow color</label>
+          <input type="color" id="color" />
+          <!-- code -->
+          <textarea class="shadow-code"></textarea>
+          <button class="copy-shadow-code">Copy</button>
+        </div>
+        <!-- Adjust Box -->
+        <div class="title">
+          <h3>Adjust Box</h3>
+        </div>
+        <div class="inputs-wrapper">
+          <!-- bg color -->
+          <label for="bg-color">Background color</label>
+          <input type="text" id="bg-color" value="#fff" />
+          <!-- width -->
+          <label for="width">Width</label>
+          <input
+            type="range"
+            id="width"
+            max="40"
+            min="2"
+            value="13"
+            step="0.1"
+          />
+          <!-- height -->
+          <label for="height">Height</label>
+          <input
+            type="range"
+            id="height"
+            max="40"
+            min="2"
+            value="13"
+            step="0.1"
+          />
+          <!-- border radius -->
+          <label for="border-radius">Border radius</label>
+          <input
+            type="range"
+            id="border-radius"
+            max="20"
+            min="0"
+            value="1"
+            step="0.1"
+          />
+          <textarea class="box-code"></textarea>
+          <button class="copy-box-code">Copy</button>
+        </div>
+      </section>
+    </main>
+    <!-- javaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
