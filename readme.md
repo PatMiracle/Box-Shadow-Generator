@@ -36,7 +36,7 @@ The keyword inset is used to specify to make the box-shadow inwards.
 
 ### Live Site
 
-Live Site URL: https://www.box-shadow-generator.netlify.app
+Live Site URL: https://create-box-shadow.netlify.app/
 
 ## HTML Structure
 
