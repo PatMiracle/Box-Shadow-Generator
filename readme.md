@@ -109,5 +109,5 @@ https://www.youtube.com/watch?v=9WZ4ajDNmrU&t=294s
 
 ## Author
 
-- Website - https://www.pimiracle.w3spaces.com/
+- Website - https://pimiracle.w3spaces.com/
 - Twitter - [@mimiDevs](https://www.twitter.com/mimiDevs)
