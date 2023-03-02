@@ -7,16 +7,17 @@ Customize awesome box shadows and get the CSS code.
 - [Overview](#overview)
   - [What is box shadow](#what-is-box-shadow)
   - [Live Site](#live-site)
-- [HTML Structure](#html-structure)
-- [Responsiveness](#responsiveness)
-  - [Small screen](#small-screen)
-  - [Big screen](#big-screen)
-- [Event Listeners](#event-listeners)
+- [My process](#my-process)
+  - [HTML Structure](#html-structure)
+  - [Responsiveness](#responsiveness)
+    - [Small screen](#small-screen)
+    - [Big screen](#big-screen)
+  - [Event Listeners](#event-listeners)
+  - [Copy code](#copy-code)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
 ## Overview
-
-This app was built with HTML, CSS and JavaScript.
-I would be talking about my process below.
 
 ### What is box Shadow?
 
@@ -34,9 +35,14 @@ In the code below, the first and second value (6px and 10px) are the X and Y off
 
 The keyword inset is used to specify to make the box-shadow inwards.
 
-### Live Site
+## Live Site
 
 Live Site URL: https://create-box-shadow.netlify.app/
+
+## My process
+
+This app was built with HTML, CSS and JavaScript.
+I would be talking about my process below.
 
 ## HTML Structure
 
@@ -81,8 +87,27 @@ All input elements are selected. For each of the input an event listener is adde
 
 ```js
 inputs.forEach((input) => {
-  input.addEventListener("input", () => {
+  input.addEventListener('input', () => {
     renderBox()
   })
 })
 ```
+
+## Copy code
+
+```js
+btn.addEventListener('click', () => {
+  input.select()
+  document.execCommand('copy')
+  alert('code copied to your clipboard')
+})
+```
+
+## Useful Resources
+
+https://www.youtube.com/watch?v=9WZ4ajDNmrU&t=294s
+
+## Author
+
+- Website - https://www.pimiracle.w3spaces.com/
+- Twitter - [@mimiDevs](https://www.twitter.com/mimiDevs)
