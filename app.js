@@ -77,10 +77,10 @@ function hexToRgba(color, shadowColorOpacity) {
 }
 
 // Copy code
-function copy(code) {
-  code.addEventListener("click", () => {
-    code.previousElementSibling.select()
-    document.execCommand("copy")
+function copy(btn) {
+    btn.addEventListener("click", () => {
+    const code = btn.previousElementSibling.value
+    navigator.clipboard.writeText(code)
     alert("code copied to your clipboard")
   })
 }
