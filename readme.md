@@ -94,13 +94,14 @@ inputs.forEach((input) => {
 ```
 
 ## Copy code
+The document.execCommand is depreciated, so we use navigator clipboard property.
 
 ```js
-btn.addEventListener('click', () => {
-  input.select()
-  document.execCommand('copy')
-  alert('code copied to your clipboard')
-})
+  btn.addEventListener("click", () => {
+    const code = input.value
+    navigator.clipboard.writeText(code)
+    alert("code copied to your clipboard")
+  })
 ```
 
 ## Useful Resources
